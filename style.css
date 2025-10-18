@@ -1,0 +1,55 @@
+body {
+  font-family: "poppins", Arial, sans-serif;
+  background: #f2f4f7;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+img {
+    max-width: 10%;
+    margin-left: 250px;
+}
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  color: #444;
+}
+
+.pertanyaan {
+  margin: 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
