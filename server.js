@@ -23,7 +23,7 @@ app.get("/review-informasi.html", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile("index.html", option_page);
+  res.sendFile("index.html");
 });
 
 io.on("connection", (socket) => {
