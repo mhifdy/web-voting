@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Review Jawaban</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="http://localhost:3500/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="/asset/style.css">
+
 </head>
 <body>
+   <script>
+        const socket = io("http://localhost:3500");
+      </script>
   <div class="review-container">
     <h2>Konfirmasi Jawaban Anda</h2>
 
@@ -66,7 +71,7 @@
     </div>
 
     <div class="action-buttons">
-      <button class="back" onclick="window.location.href='pertanyaan.html'">Kembali</button>
+      <button class="back" onclick="window.location.href='/pertanyaan.html'">Kembali</button>
       <button onclick="alert('Jawaban berhasil dikirim!')">Kirim</button>
     </div>
   </div>

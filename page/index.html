@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Identitas Responden</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/asset/style.css">
+  <script src="http://localhost:3500/socket.io/socket.io.js"></script>
 </head>
 <body>
+  <script>
+    const socket = io ("http://localhost:3500")
+  </script>
   <div class="container">
     <h2>Form Identitas Responden</h2>
     <p style="text-align:center; color:#666;">Silakan isi data diri Anda dengan benar sebelum melanjutkan ke pertanyaan.</p>
@@ -26,7 +30,7 @@
         <input type="email" id="email" name="email" placeholder="nama@email.com" required>
       </div>
 
-      <button type="submit">Lanjut ke Pertanyaan</button>
+      <button type="button" onclick="document.location='/pertanyaan.html'">Kirim</button>
     </form>
   </div>
 

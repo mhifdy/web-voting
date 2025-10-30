@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pertanyaan</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="http://localhost:3500/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="/asset/style.css">
 </head>
 <body>
+   <script>
+      const socket = io("http://localhost:3500");
+    </script>
     <div class="container">
     <h2>Pertanyaan</h2>
     <form>
@@ -72,8 +76,9 @@
         </div>
 
       <div class="button-group">
-        <button type="button" onclick="submit()">Kirim</button>
+        <button type="button" onclick="document.location='/review-informasi.html'">Kirim</button>
     </div>
     </form>
+   
 </body>
 </html>
